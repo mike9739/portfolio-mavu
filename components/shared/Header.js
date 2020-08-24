@@ -7,7 +7,7 @@ class Header extends React.Component {
         return (
             <React.Fragment>
                 <Link  href="/">
-                    <a className={customClass}> Home </a>
+                    <a> Home </a>
                 </Link>
                 <Link href="/about">
                     <a> About </a>
@@ -21,13 +21,6 @@ class Header extends React.Component {
                 <Link href="/cv">
                     <a> Cv </a>
                 </Link>
-                <style jsx>
-                    {`
-                        .customClass {
-                            color:red;
-                        }
-                    `}
-                </style>
             </React.Fragment>
         )
     }

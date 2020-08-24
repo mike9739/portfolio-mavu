@@ -1,0 +1,14 @@
+@import "./shared/fonts";
+@import "./index";
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', 'Helvetica', serif !important;
+}
+.self-typed {
+  font-size: 31px;
+  color:white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
