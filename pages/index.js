@@ -3,12 +3,17 @@ import Typed from "react-typed"
 import BaseLayout from "../components/layout/BaseLayout";
 import {Col,Row ,Container} from "reactstrap";
 import BasePage from "../components/BasePage";
+import {useGetUser} from "../actions/user";
 
 const ROLES = ['JavaScript','Angular','Vue','React','Laravel'];
 const Index = () => {
+    const  {data,loading} = useGetUser();
 
     return (
-        <BaseLayout className="cover">
+        <BaseLayout
+            user={data}
+            loading={loading}
+            className="cover">
                 <div className="main-section">
                     <div className="background-image">
                         <img src="/images/background-index.png" />
