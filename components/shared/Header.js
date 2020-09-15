@@ -35,7 +35,7 @@ const LogoutLink = () => {
     )
 }
 
-const Header = ({user, loading}) => {
+const Header = ({user, className}) => {
 
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -43,8 +43,8 @@ const Header = ({user, loading}) => {
     return (
         <div>
             <Navbar
-                className="port-navbar port-default absolute"
-                color="transparent"
+                className={`port-navbar port-default absolute ${className}`}
+
                 dark
                 expand="md">
                 <BsNavBrand/>
@@ -66,18 +66,18 @@ const Header = ({user, loading}) => {
                         <NavItem className="port-navbar-item">
                             <BsNavLink href="/cv" title="Cv"/>
                         </NavItem>
-                        <NavItem className="port-navbar-item">
-                            <BsNavLink href="/secret" title="Secret"/>
-                        </NavItem>
-                        <NavItem className="port-navbar-item">
-                            <BsNavLink href="/secretssr" title="Secret SSR"/>
-                        </NavItem>
-                        <NavItem className="port-navbar-item">
-                            <BsNavLink href="/admin" title="Admin"/>
-                        </NavItem>
-                        <NavItem className="port-navbar-item">
-                            <BsNavLink href="/adminssr" title="SSRAdmim"/>
-                        </NavItem>
+                        {/*<NavItem className="port-navbar-item">*/}
+                        {/*    <BsNavLink href="/secret" title="Secret"/>*/}
+                        {/*</NavItem>*/}
+                        {/*<NavItem className="port-navbar-item">*/}
+                        {/*    <BsNavLink href="/secretssr" title="Secret SSR"/>*/}
+                        {/*</NavItem>*/}
+                        {/*<NavItem className="port-navbar-item">*/}
+                        {/*    <BsNavLink href="/admin" title="Admin"/>*/}
+                        {/*</NavItem>*/}
+                        {/*<NavItem className="port-navbar-item">*/}
+                        {/*    <BsNavLink href="/adminssr" title="SSRAdmim"/>*/}
+                        {/*</NavItem>*/}
                     </Nav>
                     <Nav navbar>
                        <>

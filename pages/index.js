@@ -2,7 +2,6 @@ import React from "react";
 import Typed from "react-typed"
 import BaseLayout from "../components/layout/BaseLayout";
 import {Col,Row ,Container} from "reactstrap";
-import BasePage from "../components/BasePage";
 import {useGetUser} from "../actions/user";
 
 const ROLES = ['JavaScript','Angular','Vue','React','Laravel'];
@@ -13,6 +12,7 @@ const Index = () => {
         <BaseLayout
             user={data}
             loading={loading}
+            navClass="transparent"
             className="cover">
                 <div className="main-section">
                     <div className="background-image">

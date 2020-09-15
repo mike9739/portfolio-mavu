@@ -1,50 +1,45 @@
-
-import Link from 'next/link';
 import BaseLayout from "../../components/layout/BaseLayout";
 import BasePage from "../../components/BasePage";
-import {useGetPost} from "../../actions";
 import {useGetUser} from "../../actions/user";
+import PortfolioApi from "../../lib/api/portfolio";
+import  {CardText,Row,Col,Card,CardHeader,CardBody,CardTitle} from "reactstrap";
+import React from "react";
+import PortfolioCard from "../../components/shared/PortfolioCard";
+import {useRouter} from "next/router";
 
 
 
-const Portfolios = () => {
-    const { data, error, loading } = useGetPost();
+const Portfolios = ({portfolios}) => {
     const { data:dataUser, loading:loadingUser } = useGetUser();
-
-
-    const renderPosts = (posts) => {
-        return posts.map(post =>
-            <li key={post.id} style={{'fontSize': '20px'}}>
-                <Link as={`/portfolios/${post.id}`} href="/portfolios/[id]">
-                    <a>
-                        {post.title}
-                    </a>
-                </Link>
-            </li>
-        )
-    }
-
+    const router = useRouter();
     return (
         <BaseLayout
             user={dataUser}
             loading={loadingUser}
         >
-            <BasePage>
-                <h1>I am Portfolio Page</h1>
-                { loading &&
-                <p>Loading data...</p>
-                }
-                { data &&
-                <ul>
-                    {renderPosts(data)}
-                </ul>
-                }
-                { error &&
-                <div className="alert alert-danger">{error.message}</div>
-                }
+            <BasePage
+                header="Portfolios"
+                className="portfolio-page">
+                <Row>
+                    {portfolios.map(portfolio => (
+                        <Col key={portfolio._id} md="4" onClick={() => {
+                            router.push('/portfolios/[id]',`/portfolios/${portfolio._id}`)
+                        }}>
+                            <PortfolioCard portfolio={portfolio}/>
+                        </Col>
+                    ))}
+                </Row>
             </BasePage>
         </BaseLayout>
     )
+}
+
+export async function getStaticProps() {
+    const data = await new PortfolioApi().getAll();
+    const portfolios = data.data;
+    return {
+        props:{portfolios}
+    }
 }
 
 export default Portfolios;

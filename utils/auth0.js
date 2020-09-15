@@ -5,22 +5,24 @@ import Redirect from "../components/shared/Redirect";
     domain: process.env.AUTH0_DOMAIN,
     clientId: process.env.AUTH0_CLIENT_ID,
     clientSecret: process.env.AUTH0_CLIENT_SECRET,
+     audience:process.env.AUTH0_AUDIENCE,
     scope: 'openid profile',
     redirectUri: process.env.AUTH0_REDIRECT_URI,
     postLogoutRedirectUri: process.env.AUTH0_POST_LOGOUT_URI,
     session: {
         // The secret used to encrypt the cookie.
         cookieSecret: process.env.AUTH0_COOKIE_SECRET,
+        storeAccessToken:true
     }
 });
 export default auth0;
 
 export const isAuthorized = (user, role) => {
-    return (user && user[process.env.AUTH0_NAMESPACE + '/roles'].includes(role));
+    return (user && user['http://portfolio-mavu.com'+ '/roles'].includes(role));
 }
 
 export const authorizeUser = async (req, res) => {
-    const session = await auth0.getSession(req);
+    const session = await auth0.getSession(req);1
     if (!session || !session.user) {
         res.writeHead(302, {
             Location: '/api/v1/login'

@@ -4,7 +4,6 @@ import {withAuth} from "../utils/auth0";
 
 
 const AdminSSR = ({user, title}) => {
-    debugger
     return (
         <BaseLayout user={user} loading={false}>
             <BasePage>
