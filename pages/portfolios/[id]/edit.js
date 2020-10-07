@@ -14,29 +14,33 @@ const PortfolioEdit = ({user}) => {
     const [updatePortfolio,{error}] = useUpdatePortfolio();
     const {data:initialData} = useGetPortfolio(router.query.id);
 
-    const handlerUpdatePortfolio =(data) =>{
-        updatePortfolio(router.query.id,data);
-        if (error){
-            toast.error(error, {
-                position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }else {
-            toast.info('👽 Portfolio Updated!', {
-                position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-            });
-        }
+    const handlerUpdatePortfolio =async (data) => {
+
+            await updatePortfolio(router.query.id, data).then(()=>{
+                toast.info('👽 Portfolio Updated!', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            }).catch((e)=>{
+                toast.info(e, {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+            })
+
+
+
+
     }
 
     return (
@@ -47,6 +51,7 @@ const PortfolioEdit = ({user}) => {
             <BasePage header="Portfolio Edit ">
                 {   initialData &&
                     <PortfolioForm buttonText={'Update'} onSubmit={handlerUpdatePortfolio} initalData={initialData}/>}
+
             </BasePage>
         </BaseLayout>
     )
