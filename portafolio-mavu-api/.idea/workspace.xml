@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42ef411a-9853-4635-af54-0704ba73ebcc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gvQMkoaDtYvsQ4PE9Ae1JaBgz0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react/portfolio-mavu" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.populate">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="populate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="populate" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.populate" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42ef411a-9853-4635-af54-0704ba73ebcc" name="Default Changelist" comment="" />
+      <created>1598992541175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598992541175</updated>
+      <workItem from="1598992542394" duration="6642000" />
+      <workItem from="1599057861654" duration="4328000" />
+      <workItem from="1599067387727" duration="5736000" />
+      <workItem from="1599141721276" duration="877000" />
+      <workItem from="1599675050298" duration="8681000" />
+      <workItem from="1600105808884" duration="2511000" />
+      <workItem from="1600210915882" duration="2312000" />
+      <workItem from="1600274449394" duration="1250000" />
+      <workItem from="1600286462313" duration="2699000" />
+      <workItem from="1600298208266" duration="152000" />
+      <workItem from="1600708495090" duration="4817000" />
+      <workItem from="1600721145953" duration="1546000" />
+      <workItem from="1600785452104" duration="5398000" />
+      <workItem from="1600987091642" duration="611000" />
+      <workItem from="1603329330616" duration="348000" />
+      <workItem from="1604522095274" duration="671000" />
+      <workItem from="1604530105428" duration="1799000" />
+      <workItem from="1604536296474" duration="1236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2413" y="172" width="932" height="703" key="DBNavigator.ProjectSettingsDialog" timestamp="1599067436165">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2413" y="172" width="932" height="703" key="DBNavigator.ProjectSettingsDialog/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1599067436165" />
+    <state x="2664" y="248" width="432" height="532" key="FileChooserDialogImpl" timestamp="1600298357962">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2664" y="248" width="432" height="532" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600298357962" />
+    <state width="1874" height="261" key="GridCell.Tab.0.bottom" timestamp="1600816401761">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="261" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600816401761" />
+    <state width="1874" height="261" key="GridCell.Tab.0.center" timestamp="1600816401761">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="261" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600816401761" />
+    <state width="1874" height="261" key="GridCell.Tab.0.left" timestamp="1600816401761">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="261" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600816401761" />
+    <state width="1874" height="261" key="GridCell.Tab.0.right" timestamp="1600816401761">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="261" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600816401761" />
+    <state x="2464" y="242" key="IDE.errors.dialog" timestamp="1599000448052">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2464" y="242" key="IDE.errors.dialog/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1599000448052" />
+    <state x="2377" y="140" key="SettingsEditor" timestamp="1599067334067">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2377" y="140" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1599067334067" />
+    <state x="2540" y="229" key="run.anything.popup" timestamp="1600295847736">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2540" y="229" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600295847736" />
+    <state x="2543" y="221" width="672" height="678" key="search.everywhere.popup" timestamp="1600815876445">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="221" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1035/3840.0.1920.1080@1920.0.1920.1080" timestamp="1600815876445" />
+  </component>
+</project>
